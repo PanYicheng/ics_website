@@ -15,6 +15,7 @@ var prettify = require('gulp-jsbeautifier');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
+var sourceMap = require('gulp-sourcemaps');
 
 
 var dirs = {
@@ -111,10 +112,12 @@ gulp.task('css', function(cb) {
 
 gulp.task('dist', ['css', 'js'], function() {
     gulp.src(dirs.js)
+        // .pipe(sourceMap.init())
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))
+        // .pipe(sourceMap.write('../maps'))
         .pipe(gulp.dest('public'));
     gulp.src(dirs.css)
         .pipe(cleanCSS())

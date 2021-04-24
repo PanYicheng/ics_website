@@ -15,41 +15,8 @@ db.once('open', function() {
     console.log('connected');
 
     var admins = config.admin || [];
-    // var userList = [];
-    // User.findAsync({})
-    //     .then(function(err, users){
-    //         if(err){
-    //             console.log(err);
-    //             return;
-    //         }
-    //         console.log(users.length);
-    //     });
-    // for(const user of userList){
-    //     console.log(user.name);
-    // }
-    // var newAdmins = [];
-    // for(admin of admins){
-    //     User.findOne({name: admin.name}, function(err, user){
-    //         if(err){
-    //             newAdmins.push(admin);
-    //         }
-    //     })
-    // }
-    // User.removeAsync({name: "Unknown"})
-    //     .then(x => BPromise.all(newAdmins))
-    //     .map(user => User.registerAsync(
-    //         new User(_.omit(user, 'password')),
-    //         user.password))
-    //     .then(function() {
-    //         console.log(`${newAdmins.length} users registered`);
-    //     })
-    //     .catch(function(err) {
-    //         console.log(`user register error: ${err}`);
-    //     })
-    //     .then(function(){
-    //         db.close();
-    //     });
-    
+
+    // User.cleanIndexes();
     User.removeAsync({})
         .then(x => BPromise.all(admins))
         .map(user => User.registerAsync(

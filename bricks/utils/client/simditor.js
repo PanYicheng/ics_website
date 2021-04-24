@@ -1,3 +1,4 @@
+console.log("executing");
 $.fn.simditor = function(options) {
     options = options || {};
     var $this = $(this),

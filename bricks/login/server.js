@@ -11,9 +11,21 @@ exports.post = function(req, done, fail, res) {
                 message: '用户名或密码不正确'
             });
         }
-        req.login(user, function(err) {
-            if (err) return fail(err);
-            res.redirect(req.param('next') || '/admin');
-        });
+        if(user.level === 1){
+            console.log("jxrjxrjxr");
+            req.login(user, function(err) {
+                if (err) return fail(err);
+                // res.redirect(req.param('next') || '/admin');
+                res.redirect(req.param('next') || '/user-page');
+            });
+        }
+        else{
+            console.log("oops");
+            req.login(user, function(err) {
+                if (err) return fail(err);
+                res.redirect(req.param('next') || '/admin');
+                // res.redirect(req.param('next') || '/user-page');
+            });
+        }
     })(req);
 };

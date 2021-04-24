@@ -15,14 +15,6 @@
   },
   "livereload": 35758,
   "admin": [{
-    "name": "杨珺",
-    "username": "yangjvn",
-    "password": "id0n0tcarE"
-  },{
-    "name": "何威",
-    "username": "hewei",
-    "password": "nigongbu1iA0"
-  },{
     "name": "马萌",
     "username": "mameng",
     "password": "*ma*menG*"
@@ -31,10 +23,12 @@
     "username": "wangping",
     "password": "WangPingICS"
   },{
-    "name": "刘伟杰",
-    "username": "liuweijie",
-    "password": "LiuWeiJieICS"
-  },{
+    "name": "王萍",
+    "username": "wangping01",
+    "password": "WangPing01ICS",
+    "level": 2
+  },
+  {
     "name": "张静斌",
     "username": "zhangjingbin",
     "password": "ZhangJingBinICS"
@@ -53,7 +47,14 @@
   },{
     "name": "姜欣睿",
     "username": "jiangxinrui",
-    "password": "JiangXinRuiICS"
-  }]
+    "password": "JiangXinRuiICS",
+    "level": 2
+  },{
+    "name": "潘宜城",
+    "username": "panyicheng",
+    "password": "PanYiChengICS",
+    "level": 2
+  }
+  ]
 }
 

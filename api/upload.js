@@ -32,6 +32,21 @@ router.post('/add_file', upload.single('file'), function(req, res, next) {//sing
         .catch(next);
 });
 
+router.post('/', upload.single('file'), function(req, res, next) {//single写文件,是一个函数
+    var file = req.file;
+    file.creator = req.query.userid;
+    file.fileDate = new Date(req.body.fileDate||new Date())
+    file.type = req.query.type
+    console.error(req)
+    console.log('file',file)
+    if (!file) return res.status(400).end();
+
+    File
+        .createAsync(file)
+        .then(f => res.status(201).json(f))
+        .catch(next);
+});
+
 router.delete('/:id', function(req, res, next) {
     //debug(req.param('id'));
     File

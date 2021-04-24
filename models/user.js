@@ -5,7 +5,11 @@ var BPromise = require('bluebird');
 
 var UserSchema = mongoose.Schema({
     name: String,
-    createdTime: Date,
+    username: {
+        type: String,
+        unique: true
+    },
+    createdTime: { type: Date, default: Date.now },
     level: {
         type: Number,
         default: 1

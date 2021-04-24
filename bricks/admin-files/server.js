@@ -11,7 +11,7 @@ exports.get = function(req, done, fail) {
     File.find({mimetype : "application/pdf"})
         //.populate('creator')
         .sort('-fileDate')
-        .populate('creator')
+        // .populate('creator')
         .execAsync()
         .then(files => {
         done({

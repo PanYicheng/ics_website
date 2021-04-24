@@ -1,7 +1,7 @@
 {
   "env": "development",
   "server": {
-    "host": "localhost",
+    "host": "ics.pku.edu.cn",
     "port": 3008
   },
   "express": {
@@ -13,18 +13,49 @@
     "host": "localhost",
     "port": 6379
   },
-  "livereload": 35748,
+  "livereload": 35758,
   "admin": [{
     "name": "杨珺",
-    "username": "harttle",
-    "password": "jjjjjj"
+    "username": "yangjvn",
+    "password": "id0n0tcarE"
+  },{
+    "name": "何威",
+    "username": "hewei",
+    "password": "nigongbu1iA0"
   },{
     "name": "马萌",
-    "username": "mamengt",
-    "password": "123456"
+    "username": "mameng",
+    "password": "*ma*menG*"
   },{
-    "name": "ics",
-    "username": "ics",
-    "password": "ics1800"
-  }]
+    "name": "王平",
+    "username": "wangping",
+    "password": "WangPingICS"
+  },{
+    "name": "刘伟杰",
+    "username": "liuweijie",
+    "password": "LiuWeiJieICS"
+  },{
+    "name": "张静斌",
+    "username": "zhangjingbin",
+    "password": "ZhangJingBinICS"
+  },{
+    "name": "林蔚澜",
+    "username": "linweilan",
+    "password": "LinWeiLanICS"
+  },{
+    "name": "柏梦婷",
+    "username": "baimingting",
+    "password": "BaiMengTingICS"
+  },{
+    "name": "潘迪生",
+    "username": "pandisheng",
+    "password": "PanDiShengICS"
+  },{
+    "name": "姜欣睿",
+    "username": "jiangxinrui",
+    "password": "JiangXinRuiICS",
+    "level": 2
+  },
+  ]
 }
+
